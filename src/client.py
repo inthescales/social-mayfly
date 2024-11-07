@@ -4,10 +4,10 @@ seconds_in_day = 24 * 60 * 60
 
 def passes_threshold(timestamp, threshold):
 	"""Returns true if the timestamp is more than [threshold] days ago"""
-	
+
 	current_time = datetime.now()
 	difference = current_time - timestamp
-	return difference.total_seconds() > seconds_in_day * threshold:
+	return difference.total_seconds() > seconds_in_day * threshold
 
 class Client:
 	"""Generic superclass for a client object, which performs actions for a single specified account"""
